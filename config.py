@@ -31,4 +31,4 @@ epochs = 1000
 score = 0.5
 iou = 0.5
 
-label_path = '/opt/voc2007/labels.txt'
+label_path = '/tf2-yolov4/model_data/labels.txt'
