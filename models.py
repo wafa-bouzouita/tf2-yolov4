@@ -94,6 +94,7 @@ class YOLO:
         darknet res block
         """
         x = keras.layers.ZeroPadding2D(((1, 0), (1, 0)))(inputs)
+        print("waaaafaaaaaaaaaaaa", filters)
         x = self.conv_mish_block(inputs=x, filters=filters, kernel_size=3, strides=(2, 2))
         x_short = self.conv_mish_block(inputs=x, filters=filters // 2 if shotcut else filters, kernel_size=1)
         x_next = self.conv_mish_block(inputs=x, filters=filters // 2 if shotcut else filters, kernel_size=1)
