@@ -1,5 +1,5 @@
 keras>2.1,<2.2
-tensorflow>=2.0,<=2.2
+tensorflow<=1.6
 numpy
 matplotlib
 pillow
